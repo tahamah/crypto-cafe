@@ -5,7 +5,7 @@ const CoinCard = ({ coin }) => {
     const { id, name, image, symbol } = coin
     return (
         <div className="shadow-lg rounded-2xl w-[250px] bg-white p-4">
-            <Link to="/coins">
+            <Link to={`/coin-details/${id}`}>
                 <div className="flex gap-4 justify-between items-center">
                     <div>
                         <img
